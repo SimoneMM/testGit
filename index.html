@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+<script>
+
+    function  fakeJoin(arr, connector) {
+
+        var str = '';
+        for(var i = 0; i < arr.length; i++){
+            if(i > 0){
+                str += connector;
+            }
+            if(arr[i] !== undefined){
+                str += arr[i]
+            }
+        }
+        return str;
+    }
+
+    var a = new Array(3);
+    fakeJoin(a, '-');
+
+</script>
+
+<script>
+
+    var num = 0;
+    for(var i = 1; i < 10; i++){
+
+        if( i % 5 == 0 ){
+            break;
+        }
+        num++;
+        console.log(i)
+    }
+
+    console.log(num)
+
+</script>
+
+</body>
+</html>
