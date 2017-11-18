@@ -14,8 +14,8 @@ function drag(id){
       disY = ev.pageY - obj.offsetTop;
 
       document.onmousedown = function (ev) {
-         obj.style.left = ev.clientX - disX + 'px';
-         obj.style.top = ev.clientY - disY + 'px';
+         obj.style.left = ev.pageX - disX + 'px';
+         obj.style.top = ev.pageY - disY + 'px';
       }
   }
 
