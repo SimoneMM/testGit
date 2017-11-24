@@ -10,16 +10,22 @@
            height: 200px;
            border: 1px solid red;
            margin: auto;
+           background: red;
+           position: absolute;
        }
 
     </style>
-    <script src="drag.js"></script>
 </head>
 <body>
 
-  <div></div>
+     <div id='div'></div>
 
-<script>
+    <script src="drag.js"></script>
+    <script type="text/javascript">
+        drag('div');
+    </script>
+
+<!-- <script>
 
     function  fakeJoin(arr, connector) {
 
@@ -54,7 +60,7 @@
 
     console.log(num)
 
-</script>
+</script> -->
 
 </body>
 </html>
